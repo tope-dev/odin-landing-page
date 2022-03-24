@@ -3,6 +3,7 @@ html {
 }
 
 body {
+  background-color: #1f2937;
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -38,11 +39,18 @@ a {
     align-items: center;
     gap: 50px;
   }
+  li {
+    text-align: center;
+    transition: transform 0.2s;
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
   a {
     color: #e5e7eb;
     font-size: 18px;
   }
-  .signup {
+  .cart {
     background-color: #3882f6;
     padding: 8px 16px;
     border: #f9faf8 solid 3px;
@@ -145,39 +153,162 @@ a {
   min-width: 200px;
   overflow: hidden;
   .image {
-    background-image: url(/img/mavic_air_2.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size:     cover;                      /* <------ */
-    background-repeat:   no-repeat;
-    background-position: center center; 
+    background-size: cover; /* <------ */
+    background-repeat: no-repeat;
+    background-position: center center;
     height: 50%;
     flex: 6;
+  }
+  #mavic_air_2 {
+    background-image: url(/img/mavic_air_2.jpg);
+  }
+  #mavic_pro_2 {
+    background-image: url(/img/mavic_pro_2.jpg);
+  }
+  #mavic_3 {
+    background-color: #fff;
+    background-image: url(/img/mavic_3.jpg);
+    background-size: 80%;
+  }
+  #mavic_3_cine {
+    background-image: url(/img/mavic_3_cine.jpeg);
   }
   .text {
     background-color: #1f2937;
     height: 35%;
     padding: 10px;
     flex: 4;
+    display: flex;
+    flex-direction: column;
     h1 {
+      font-family: "Roboto", sans-serif;
       color: #f9faf8;
       margin: 0;
+      margin-bottom: 5px;
       font-size: 18px;
     }
-    p{
+    h2 {
+      color: #f9faf8;
+      margin: 0;
+      font-size: 24px;
+      text-align: right;
+    }
+    p {
+      margin-top: 2px;
       color: #f9faf8;
       font-size: 10px;
     }
   }
   .buttons {
     background-color: #3882f6;
-    flex: 2;
+    flex: 1.5;
+    display: flex;
+    align-items: center;
+    button {
+      color: #1f2937;
+      font-family: "Permanent Marker", cursive;
+      font-size: 10px;
+      font-weight: bold;
+      height: 100%;
+      border: #1f2937 solid 0px;
+      transition: transform 0.2s;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+    img {
+      height: 30px;
+    }
+    .buy {
+      background-color: orange;
+      flex: 1.5;
+    }
+    .info {
+      background-color: #3882f6;
+      flex: 1;
+    }
+    .cart {
+      background-color: #00b70b;
+      flex: 1.5;
+    }
+  }
+}
+
+//////Quote Section///////
+.container-quote {
+  box-sizing: border-box;
+  position: relative;
+
+  .image {
+    position: relative;
+    background-image: url("/img/drone_background_2.jpg");
+    filter: blur(2px) brightness(65%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    height: 15vh;
+  }
+  .quote {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+  }
+  h1 {
+    margin: 0;
+    color: #f9faf8;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 200;
+  }
+  h2 {
+    margin: 0;
+    color: #f9faf8;
+    text-align: right;
+  }
+}
+//////CONTACT SECTION//////
+.container-contact {
+  margin: 0;
+  background-color: #f9faf8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+//////FOOTER///////
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  background-color: #1f2937;
+  height: 8vh;
+  h3 {
+    font-size: 16px;
+    font-weight: 200;
+    color: #f9faf8;
+    text-align: center;
+    margin: 0;
   }
 }
 
 ////////Mobile screen (Under 600px)
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1200px) {
+  /////HEADER//////
   .header {
     padding: 10px 4vh;
     h1 {
@@ -187,9 +318,10 @@ a {
       gap: 20px;
     }
     a {
-      font-size: 12px;
+      font-size: 16px;
     }
   }
+  /////HERO PAGE//////
   .container-home {
     padding: 40px 6vh 10px 6vh;
     .left {
@@ -201,7 +333,25 @@ a {
       }
     }
   }
+  /////SHOP PAGE/////
   .container-shop {
     padding: 20px 4vh;
+    .shop {
+      gap: 45px;
+    }
+  }
+
+  //////QUOTE SECTION/////
+  .container-quote {
+    .quote {
+      padding: 10px 4vh;
+    }
+    h1 {
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+    h2 {
+      font-size: 18px;
+    }
   }
 }

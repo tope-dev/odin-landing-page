@@ -18,7 +18,7 @@
         <ul>
           <li><a href="#header">Home</a></li>
           <li><a href="#shop">Shop</a></li>
-          <li class="signup"><a href="#signup">Signup</a></li>
+          <li class="cart"><a href="#cart">Check Out</a></li>
         </ul>
       </div>
     </div>
@@ -43,23 +43,85 @@
     <!-- Shop -->
     <div id="shop" class="container-shop">
       <h1>SHOP</h1>
+      <!-- Products -->
       <div class="shop">
+        <!-- Product -->
         <div class="product">
-          <div class="image"></div>
+          <div id="mavic_air_2" class="image"></div>
           <div class="text">
-            <h1>MAVIC AIR 2</h1>
-            <p></p>
+            <h1>DJI MAVIC Air 2</h1>
+            <p>570 grams</p>
+            <p>34 minutes flight time</p>
+            <h2>799 $</h2>
           </div>
           <div class="buttons">
-            <button></button>
-            <button></button>
-            <button></button>
+            <button onclick="addToCart()" class="cart"><img src="/img/add_to_cart_icon.svg" alt=""></button>
+            <button onclick="info()" class="info"><img src="/img/Info_icon.svg" alt=""></button>
+            <button onclick="buyNow()" class="buy">Buy Now<img src="/img/buy_now_icon.svg" alt=""></button>
           </div>
         </div>
-        <div class="product"></div>
-        <div class="product"></div>
-        <div class="product"></div>
+        <!-- Product -->
+        <div class="product">
+          <div id="mavic_pro_2" class="image"></div>
+          <div class="text">
+            <h1>DJI MAVIC Pro 2</h1>
+            <p>907 grams</p>
+            <p>31 minutes flight time</p>
+            <h2>1395 $</h2>
+          </div>
+          <div class="buttons">
+            <button onclick="addToCart()" class="cart"><img src="/img/add_to_cart_icon.svg" alt=""></button>
+            <button onclick="info()" class="info"><img src="/img/Info_icon.svg" alt=""></button>
+            <button onclick="buyNow()" class="buy">Buy Now<img src="/img/buy_now_icon.svg" alt=""></button>
+          </div>
+        </div>
+        <!-- Product -->
+        <div class="product">
+          <div id="mavic_3" class="image"></div>
+          <div class="text">
+            <h1>DJI MAVIC 3</h1>
+            <p>895 grams</p>
+            <p>46 minutes flight time</p>
+            <h2>2099 $</h2>
+          </div>
+          <div class="buttons">
+            <button onclick="addToCart()" class="cart"><img src="/img/add_to_cart_icon.svg" alt=""></button>
+            <button onclick="info()" class="info"><img src="/img/Info_icon.svg" alt=""></button>
+            <button onclick="buyNow()" class="buy">Buy Now<img src="/img/buy_now_icon.svg" alt=""></button>
+          </div>
+        </div>
+        <!-- Product -->
+        <div class="product">
+          <div id="mavic_3_cine" class="image"></div>
+          <div class="text">
+            <h1>MAVIC MAVIC 3 Cine</h1>
+            <p>899 grams</p>
+            <p>46 minutes flight time</p>
+            <h2>4799 $</h2>
+          </div>
+          <div class="buttons">
+            <button onclick="addToCart()" class="cart"><img src="/img/add_to_cart_icon.svg" alt=""></button>
+            <button onclick="info()" class="info"><img src="/img/Info_icon.svg" alt=""></button>
+            <button onclick="buyNow()" class="buy">Buy Now<img src="/img/buy_now_icon.svg" alt=""></button>
+          </div>
+        </div>
       </div>
+    </div>
+    <!-- Quote -->
+    <div class="container-quote">
+      <div class="image"></div>
+      <div class="quote">
+      <h1>Looking at the world from birds eye probably feels amazing. If only there was a way to feel few minutes of it's freedom.</h1>
+      <h2>-Jim, a guy without a drone</h2>
+      </div>
+    </div>
+    <!-- Contact us -->
+    <div class="container-contact">
+
+    </div>
+    <!-- Footer -->
+    <div class="footer">
+      <h3>Copyright © tope-dev 2022</h3>
     </div>
   </body>
 </html>
