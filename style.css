@@ -119,7 +119,7 @@ a {
 }
 
 .container-shop {
-  background-color: #f9faf8;
+  background-color: #e5e7eb;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -160,6 +160,10 @@ a {
   background-position: center center;
   height: 50%;
   flex: 6;
+  transition: transform 0.2s;
+}
+.product .image:hover {
+  transform: scale(1.1);
 }
 .product #mavic_air_2 {
   background-image: url(/img/mavic_air_2.jpg);
@@ -279,10 +283,48 @@ a {
   margin: 0;
   background-color: #f9faf8;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: 300px;
+  height: 200px;
+  padding: 5em 10em;
+}
+
+.contact-wrap {
+  display: flex;
+  width: 1000px;
+  height: 10em;
+  background-color: #3882f6;
+  border: transparent solid 0px;
+  border-radius: 20px;
+  padding: 1.5em;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.contact-text h1 {
+  color: #f9faf8;
+  margin: 0;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.contact-text p {
+  color: #f9faf8;
+  font-size: 14px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.button-wrap button {
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Permanent Marker", cursive;
+  color: #f9faf8;
+  background-color: #1f2937;
+  border: #f9faf8 solid 5px;
+  border-radius: 25px;
+  margin: 0;
+  padding: 12px 24px;
 }
 
 .footer {
@@ -341,5 +383,32 @@ a {
   }
   .container-quote h2 {
     font-size: 18px;
+  }
+
+  .container-contact {
+    height: 300px;
+    padding: 1em 4em;
+  }
+
+  .contact-wrap {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    width: 50vw;
+    padding: 1em 2em;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 10px;
+  }
+
+  .button-wrap button {
+    font-size: 16px;
   }
 }/*# sourceMappingURL=style.css.map */
